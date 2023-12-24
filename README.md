@@ -5,10 +5,11 @@
 2. Activate the virtual environment `. env/bin/activate`
 3. Install the dependencies using `pip install -r requirements.txt`. Run it within the backend folder.
 4. Set the value of `GOOGLE_API_KEY` in the .env file and then source it using `source .env`
-5. Start the development server using `uvicorn main:app --reload`. Run it within the backend folder.
-4. In a browser navigate to `http://localhost:8000/docs` where you can try the /metrics endpoint of the app.
+5. Go to the backend code folder `cd backend/crux`
+5. Start the development server using `python manage.py runserver`.
 
-To try the endpoint on the `http://localhost:8000/docs` url, enter the value of the URL and it should give you the CrUX report of the url as response.
+To try the endpoint on the `http://localhost:8000/metrics` url, pass any url as a get parameter and use the key as `url`. It will give the metrics as JSON.
+
 
 ### Steps to configure Frontend
 1. Go into the frontend folder using `cd frontend`
